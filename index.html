@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jajoo's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.info, .about, .education, .experience, .projects, .achievements, .skills, .courses, .extracurriculars');
+        
+        elements.forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#FF355E';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = ''; // Reset to default background color
+            });
+        });
+    });
+
+</script>
+
+<body>
+    <header class="info">
+        <h1>Jay Jajoo</h1>
+        <p>Empowered Continuous Learner</p>
+        <p>Email: jayjajoo02@gmail.com</p>
+        <p>Phone: +91-9016241650</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/jay-jajoo-64958b15a">linkedin.com/in/jay-jajoo-64958b15a</a></p>
+        <p>GitHub: <a href="https://github.com/JayJajoo">github.com/yourgithubusername</a></p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and driven individual with a keen interest in the field of Data Science. Currently pursuing my B.Tech Major in Computer Science and Engineering at Vellore Institute of Technology, Vellore, I am dedicated to continuous learning and innovation. My journey in the realm of technology began with a strong foundation in Computer Science, and it has evolved into a deep fascination for extracting meaningful insights from data. I am enthusiastic about leveraging cutting-edge tools and techniques to tackle complex problems and contribute to the world of data-driven decision-making.</p>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <td>B.Tech. Major</td>
+                <td>Vellore Institute of Technology, Vellore</td>
+                <td>8.98 (Current)</td>
+                <td>2023-Present</td>
+            </tr>
+            <tr>
+                <td>Senior Secondary</td>
+                <td>CBSE Board</td>
+                <td>91.8%</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Secondary</td>
+                <td>CBSE Board</td>
+                <td>88.0%</td>
+                <td>2018</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Imagine Web Technologies</h3>
+            <p>June 2022 - July 2022</p>
+            <p>Web Development Intern</p>
+            <p>Mumbai</p>
+            <ul>
+                <li>Executed new features using a combination of front-end (HTML, CSS, ReactJS, Bootstrap) and back-end technologies (Node.js, Express.js).</li>
+                <li>Discovered and resolved performance bottlenecks, optimized code, and optimized loading time.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Metamorphic Malware Detection</h3>
+            <p>Feb. 2023 - Apr. 2023</p>
+            <p>Python</p>
+            <p>GitHub: <a href="https://github.com/JayJajoo/Metamorphic-Malware-Detection">link-to-github</a></p>
+            <ul>
+                <li>Hyper-tuned different RNN Model such as LSTM, Bi-LSTM, GRU to increase the efficiency of conventional detection models by 2% and decreased the false positive rate.</li>
+                <li>Key Features include hyper-parameter tuning, data visualization, hybrid model creation using Bi-LSTM and GRU.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Amazon Product Reviews Sentiment Analyzer and Data Visualizer</h3>
+            <p>Jan. 2023</p>
+            <p>Express.js, React.js, Python</p>
+            <p>GitHub: <a href="https://github.com/JayJajoo/Amazon-Product-Anaysis-App">link-to-github</a></p>
+            <ul>
+                <li>This system streamlines the task of collecting reviews from Amazon. It then uses a machine learning model to analyze if the reviews are positive or negative. The results are displayed in a user-friendly way using Chart.js, which minimized the user’s effort by 25%.</li>
+                <li>Utilized OpenAI API, Chart.js and D3.js to fetch data and visualize it.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Toxic Comment Classifier</h3>
+            <p>Oct. 2022 - Nov. 2022</p>
+            <p>Python (NLTK, LSTM)</p>
+            <p>GitHub: <a href="https://github.com/JayJajoo/Toxic-Comment-Classifier">link-to-github</a></p>
+            <ul>
+                <li>Developed ML model using LSTM to categorize comments as toxic consisting 6 different categories. Utilized nltk library for NLP purposes and achieved an accuracy of 96.15%.</li>
+                <li>Key features include hyper-parameter tuning, comments pre-processing (data cleaning).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Certified AWS Solutions Architect: Successfully completed AWS Sol. Arch. certification with a score of 793/1000, achieving competencies in all the parameters the certification needed. View Badge</li>
+            <a href="//www.credly.com/badges/c6b46608-c3c8-405e-a596-36f213dfc558/public_url">link-to-badge</a>
+            <li>Published Research Paper in IEEE - ICDSNS 2023: In the distinguished IEEE conference ICDSNS 2023, we showcased our research paper for a group project titled Performance Comparison of RNNs for Metamorphic Malwares and got it published in the IEEE index on 26 Sept. 2023. View Paper</li>
+            <a href="//drive.google.com/file/d/10P4rC9_63cJoExsjgnd2nQ6RU_2_bqtE/view?pli=1">link-to-paper</a>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming: C, C++, Python, Javascript, Java*, PHP*, R*, Shell*</li>
+            <li>ML/DL (Tools and Frameworks): NumPy, Pandas, scikit-learn, NLTK, TensorFlow*, Keras*</li>
+            <li>Web and App technologies and Frameworks: HTML, CSS, React, Node.js, Express.js, Flask, Django*</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li><strong>*</strong> -> <strong>Elementary proficiency</strong></li> 
+        </ul>
+    </section>
+
+    <section class="courses">
+        <h2>Key Courses</h2>
+        <ul>
+            <li>AWS Certified Machine Learning Specialty 2023 - Hands On!</li>
+            <li>Machine Learning A-Z™: AI, Python R</li>
+            <li>Data Visualization in Python™: Beginners to Pro</li>
+            <li>React - The Complete Guide 2023</li>
+            <li>Python And Django Framework For Beginners Complete Course</li>
+            <li>Python for Machine Learning with Numpy, Pandas, and Matplotlib</li>
+        </ul>
+    </section>
+
+    <section class="extracurriculars">
+        <h2>Extracurriculars</h2>
+        <p>Environmental Campaign, 26th Jun 2023 - 28th Jun 2023</p>
+        <p>Engaged in a tree plantation drive in Valod, Surat and cultivated 350 trees in the area.</p>
+    </section>
+
+    <footer>
+        <!-- Add your footer content if needed -->
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
